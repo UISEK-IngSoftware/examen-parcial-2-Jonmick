@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ movie.title }}{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row align-items-center">
+    <div class="col-md-5 text-center mb-4 mb-md-0">
+      <img src="{{ movie.picture.url }}" alt="{{ movie.title }}" class="img-fluid rounded shadow" style="max-height: 500px;">
+    </div>
+    <div class="col-md-7">
+      <h1 class="mb-3">{{ movie.title }}</h1>
+      <p><strong>Año:</strong> {{ movie.year }}</p>
+      <p><strong>Director:</strong> {{ movie.director }}</p>
+      <p><strong>Género:</strong> {{ movie.genre }}</p>
+      <p><strong>Sinopsis:</strong> {{ movie.synopsis }}</p>
+    </div>
+  </div>
+</div>
+{% endblock content %}

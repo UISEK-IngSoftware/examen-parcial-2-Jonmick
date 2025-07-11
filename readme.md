@@ -1,10 +1,9 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/zc0rLUt7)
 # Examen Parcial 2. Django: Vistas, Templates y Modelos
 
-En el presente examen se evaluarán los conocimientos de los estudiantes sobre el desarrollo de API REST  utilizando Django y Django REST Framework.
+En el presente examen se evaluarán los conocimientos de los estudiantes sobre el desarrollo de interfaces web utilizando el patrón Modelo-Vista-Controlador (MVC) con Django, HTML y CSS.
 
 Para el examen se propone crear un catálogo de pelíclas que se mostrarán en una vista Maestro - Detalle.
-
-El presente examen está basado en el examen parcial 1, por lo que el estudiante puede utilizar los recursos del repositorio usado para dicho examen.
 
 ## Objetivos 
 
@@ -14,15 +13,15 @@ El estudiante debe demostrar su capacidad para reconocer y aplicar conceptos fun
 ### 2. Desarrollo de Aplicaciones Web con Django
 Este proyecto servirá como una introducción al desarrollo de aplicaciones web mediante el uso de Django como framework. El estudiante debe ser capaz de utilizar modelos en Django para reforzar sus conocimientos sobre POO y el manejo de bases de datos relacionales.
 
-### 3. Generación de API REST con Django REST Framework
-El estudiante debe ser capaz de desarrollar API's de manera efectiva utilizando las bondades de Django REST Framework.
+### 3. Diseño de Interfaces Gráficas Web
+El estudiante debe ser capaz de desarrollar interfaces gráficas web utilizando HTML y CSS, mostrando un entendimiento sólido de cómo construir y estilizar páginas web de manera efectiva.
 
 ## Reglas del examen
 Los estudiantes podrán usar los recursos usados en clase tales como laboratorios, diapositivas, apuntes. Así como consultas en StackOverflow y sitios de consulta para desarrolladores.
 
-Las consultas sobre cualquier inquietud se deberá hacer únicamente al docente a través de los siguientes contactos.
-- pablo.perez@uisek.edu.ec (Estudiantes de la UISEK)
-- paperez@puce.edu.ec (Estudiantes de la PUCE)
+**No se permite el uso de: Chats como Whatsapp, Microsoft Teams, Google Chat, Telegram, entre otros; así como tampoco se permite el uso de inteligencia artificial generativa**
+
+Las consultas sobre cualquier inquietud se deberá hacer únicamente al docente.
 
 **Cualquier intento de fraude anulará el presente examen, pasará al registro con la nota de Cero y se informará a la coordinación de la carrera para tomar las acciones pertinentes de acuerdo al reglamento de la institución**.
 
@@ -39,14 +38,18 @@ Las consultas sobre cualquier inquietud se deberá hacer únicamente al docente 
 
 2. **Generación de migraciones.** El estudiante debe generar las migraciones para generar las tablas en la base de datos
 3. **Añadir model a la vista de administrador de Django** El modelo deberá poder ser administrado en la aplicación '/admin' de Django
-4. **Endpoints de API REST**
-    - GET /movies/ obtiene el listado de las películas
-    - GET /movies/{id} obtiene los detalles de una pelicula
-    - POST /movies/ Debe permitir la creación de un ítem de película.
-    - PUT /movies/{id} Debe permitir la edición de los campos de la pelicula seleccionada por su ID.
-    - DELETE /movies/{id} Debe permitir eliminar la película
+4. **Despliegue de listado películas (index).** Las películas que se encuentran en la base de datos se deberán mostrar en la pantalla inicial de la aplicación de la siguiente manera
+    - Nombre de la película - Año de publicación
+    - El sitio web deberá tener una cabecera con el títlo del sitio y los estilos CSS que el estudiante crea necesarios.
 
     A continuación se muestra un bosquejo del listado de las películas.
+![Pantalla 1](mockups/pantalla_1.png)
+5. **Despliegue de Detalles de película.** Al momento de seleccionar una película del listado especificado en el paso anterior. El estudiante deberá mostrar los detalles de la película seleccionada. Esta deberá mostrar todos los campos declarados en el modelo.
+
+    A continuación se muestra un bosquejo de los detalles de las películas.
+![Pantalla 2](mockups/pantalla_2.png)
+
+6. **Rutas.** El acceso a las rutas y los enlaces de las mismas quedan a criterio del estudiante
 
 ## Especificaciones del motor de base de datos
 El estudiante puede trabajar con el motor de base de datos PostgreSQL o Sqlite. Lo importante es que las migraciones funcionen correctamente.
